@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Arc?>
+<?import javafx.scene.shape.ArcType?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml" fx:controller="com.example.controllers.Controller" prefWidth="400" prefHeight="400">
+
+    <!-- Pacman (um arco amarelo) -->
+    <Arc fx:id="pacman"
+         centerX="200.0" centerY="200.0"
+         radiusX="40.0" radiusY="40.0"
+         startAngle="45.0" length="270.0"
+         type="ROUND"
+         fill="YELLOW" />
+
+    <!-- Botões de controle -->
+    <Button text="UP" layoutX="190" layoutY="320" onAction="#moverCima"/>
+    <Button text="DOWN" layoutX="180" layoutY="360" onAction="#moverBaixo"/>
+    <Button text="LEFT" layoutX="135" layoutY="340" onAction="#moverEsquerda"/>
+    <Button text="RIGHT" layoutX="240" layoutY="340" onAction="#moverDireita"/>
+
+</AnchorPane>
